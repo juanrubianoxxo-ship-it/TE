@@ -606,7 +606,7 @@ if analysis:
             st.header("Estimación de venta y resumen")
             estimate = formula_forecast["estimacion_venta"]
             st.markdown('<div class="big-sale-label">VENTA MENSUAL ESTIMADA DEL PUNTO NUEVO</div>', unsafe_allow_html=True)
-            st.markdown(f'<div class="big-sale-value">{display_number(estimate, 2)} <span style="font-size:1.15rem;font-weight:650">miles de pesos</span></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="big-sale-value">{display_number(estimate, 2)} <span style="font-size:1.15rem;font-weight:650">millones</span></div>', unsafe_allow_html=True)
             st.caption(
                 f"Calculada con la venta real de {mirror['NAME']} (CR {mirror['CR']}) del Book y el factor total de puntajes de la ficha antigua."
             )
